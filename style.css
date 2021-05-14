@@ -1,13 +1,102 @@
-.left {
-    width: 50%;
-   float: left; 
+/* * {
+    border: 1px solid blue;
+} */
+
+
+body {
+    text-align: center;
+    color: #34312d;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #FFF3EB; */
+    background-image: linear-gradient(to right,rgba(254, 200, 154,0.8 ), 1%, rgba(254, 200, 154, 0.5), 20%, rgba(254, 200, 154,0), 78%, rgba(254, 200, 154,0.5 ), 99%, rgba(254, 200, 154,0.8 ));
 }
 
-.right {
-    width: 50%;
-   float: right; 
+.primary-color {
+    color:#870085;      
 }
 
-#thumbnail {
-    max-height: 500px;
+.secondary-color {
+    color: #6b705c;
 }
+
+#title {
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 0;
+
+}
+
+.sub-title {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    margin-top: 25px;
+    
+}
+
+.img-container {
+    width: 270px;
+    margin: 80px auto;
+    padding-bottom: 360px;
+    border: 1px solid rgba(107, 112, 92, 0.404);
+    border-radius: 50%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background: url(thumbnail.jpeg) no-repeat;
+    background-position: right -12px top -50px; 
+    -webkit-background-size: 105%;
+    -moz-background-size: 105%;
+    -o-background-size: 105%;
+    background-size: 105%;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+
+.center-small  {
+    width: 160px;
+    margin: 0 auto;
+}
+
+.center-medium  {
+    width: 220px;
+    margin: 0 auto;
+}
+
+.indice {
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
+    text-align: left;
+    list-style-position: inside;
+}
+
+li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.center-text {
+    max-width: 60%;
+    margin: 20px auto;
+}
+
+.list-big {
+    font-size: 1.6em;
+}
+
+.habilidades {
+    border: 1px solid #870085;
+    padding: 40px;
+    margin-top: 60px;
+}
+
