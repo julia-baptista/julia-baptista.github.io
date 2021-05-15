@@ -2,15 +2,84 @@
     border: 1px solid blue;
 } */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after { 
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+ .center {
+     text-align: center;
+ }
+
+ a {
+    transition: 0.3s ease;
+ }
+
+ a:hover {
+    font-weight: bold;
+ }
 
 body {
-    text-align: center;
     color: #34312d;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     /* background-color: #FFF3EB; */
-    background-image: linear-gradient(to right,rgba(254, 200, 154,0.8 ), 1%, rgba(254, 200, 154, 0.5), 20%, rgba(254, 200, 154,0), 78%, rgba(254, 200, 154,0.5 ), 99%, rgba(254, 200, 154,0.8 ));
+    background-image: linear-gradient(to right,rgba(254, 200, 154,0.8 ), 1%, rgba(254, 200, 154, 0.5), 20%, rgba(254, 200, 154,0.2), 78%, rgba(254, 200, 154,0.5 ), 99%, rgba(254, 200, 154,0.8 ));
 }
+
+.container-geral {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+/* .description {
+    border: 1px solid red;
+    display: block;
+} */
+
+.description-text {
+    margin-top: 90px;
+    margin-right: 20%;
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.description-text p {
+    margin-bottom: 20px;
+}
+
+.left-35 {
+    display: block;
+    width: 35%;
+    float: left;
+}
+
+.right-65 {
+    display: block;
+    width: 65%;
+    float: right;
+}
+
 
 .primary-color {
     color:#870085;      
@@ -24,23 +93,30 @@ body {
     font-family: 'Indie Flower', cursive;
     font-family: 'Dancing Script', cursive;
     font-size: 80px;
-    margin-bottom: 0;
-
+    margin-bottom: 0px;
 }
 
 .sub-title {
     font-family: 'Oswald', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2em;
-    margin-top: 25px;
-    
+    margin-top: 25px;  
+}
+
+span.line {
+    display: inline-block;
+    width: 100%;
+    border-top: 5px solid #fff;
+    margin-top: -10px;
+    z-index: -1;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .img-container {
     width: 270px;
     margin: 80px auto;
     padding-bottom: 360px;
-    border: 1px solid rgba(107, 112, 92, 0.404);
+    border: 5px solid #fff;
     border-radius: 50%;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     background: url(thumbnail.jpeg) no-repeat;
@@ -52,19 +128,13 @@ body {
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
 }
 
-
-.center-small  {
-    width: 160px;
-    margin: 0 auto;
-}
-
-.center-medium  {
-    width: 220px;
-    margin: 0 auto;
-}
 
 .indice {
     text-align: left;
@@ -85,18 +155,57 @@ li > a {
     color: inherit;
 }
 
-.center-text {
-    max-width: 60%;
-    margin: 20px auto;
-}
-
 .list-big {
     font-size: 1.6em;
 }
+/* 
+.habilidades {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.479) #fff rgba(255, 255, 255, 0.479));
+    border: 5px solid #fff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 40px;
+} */
 
 .habilidades {
-    border: 1px solid #870085;
-    padding: 40px;
-    margin-top: 60px;
+    border: 5px solid #fff;
+    position: relative;
 }
+/* 
+.habilidades h3 {
+    position: absolute;
+    top: -40px;
+    left: 50px;
+    background-color: inherit;
+} */
+
+.habilidades-itens {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;;
+}
+
+.habilidades span {
+    display: inline-block;
+    padding: 5px 30px;
+    border: 1px solid rgba(255, 192, 203, 0.37);
+    border-radius: 2px;
+    margin: 15px 25px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.habilidades span:hover {
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+
+
+
+
+
 
