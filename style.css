@@ -62,10 +62,26 @@ section {
     background-color: rgba(255, 255, 255, 0.562);
     padding: 20px 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    position: relative;
+    z-index: 1;
 }
 
 .description-text p {
     margin-bottom: 20px;
+}
+
+span.icon-pin {
+    height: 64px;
+    width: 64px;
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: 2;
+}
+
+.icon-pin img {
+    width: 100%;
 }
 
 .left-35 {
@@ -100,8 +116,20 @@ section {
     font-family: 'Oswald', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2em;
-    margin-top: 25px;  
+    margin-top: 25px;
 }
+
+.icon-flower {
+    background-image: url("pink-cosmos.png");
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+}
+
+.icon-flower img {
+    width: 100%;
+}
+
 
 span.line {
     display: inline-block;
@@ -111,6 +139,17 @@ span.line {
     z-index: -1;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
+span.line-pink, span.line-pink--center {
+    display: inline-block;
+    width: 150px;
+    border-top: 2px solid #87008591;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    z-index: -1;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 
 .img-container {
     width: 270px;
@@ -129,7 +168,6 @@ span.line {
 
 .section-title {
     font-size: 3rem;
-    margin-bottom: 30px;
     font-family: 'Oswald', sans-serif;
     font-family: 'Dancing Script', cursive;
     font-weight: lighter;
@@ -168,7 +206,7 @@ li > a {
 
 .habilidades {
     border: 5px solid #fff;
-    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 /* 
 .habilidades h3 {
